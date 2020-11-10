@@ -1,5 +1,5 @@
 // Author: J. Rostsztain
-// Title: Reflections
+// Title: XY Reflections
 
 #ifdef GL_ES
 precision mediump float;
