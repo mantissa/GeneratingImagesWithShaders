@@ -5,7 +5,7 @@ November 17 & 19 2020
 # Outline
 * Shader components: inputs, outputs, main() function
 * RGB color & HSB color
-* Common funcions
+* Common functions
 * 2D shapes
 * Random & Noise
 * Grids & Patterns
