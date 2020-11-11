@@ -1,5 +1,5 @@
-// Author:
-// Title: Hello World
+// Author: Jeremy Rotsztain
+// Title: Hello World (GLSL)
 
 #ifdef GL_ES
 precision mediump float;
