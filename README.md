@@ -7,6 +7,7 @@ November 17 & 19 2020
 * RGB color & HSB color (RGB Synthesizers)
 * Common functions
 * 2D shapes
+* Animation
 * Random & Noise
 * Grids & Patterns
 
@@ -22,6 +23,7 @@ November 17 & 19 2020
 * Layering Shapes
 
 # Shaders (Day II)
+* Animation
 * Random Square I (RGB)
 * Random Square II
 * Random Square III
