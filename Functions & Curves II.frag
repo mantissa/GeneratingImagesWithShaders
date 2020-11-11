@@ -22,8 +22,6 @@ void main() {
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
     st.x *= u_resolution.x/u_resolution.y;
     
-    float randt = ceil(u_time);
-    
     vec3 color;
     color.r = (cubicPulse(.5, 0.500, st.x ));
     color.g = (cubicPulse(0.036, 0.7, st.x ));
