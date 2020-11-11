@@ -10,7 +10,8 @@ uniform vec2 u_mouse;
 uniform float u_time;
 
 float map( float val, float inMin, float inMax, float outMin, float outMax){
- 	float pct = (val-inMin)/(inMax-inMin);
+    float pct = (val-inMin)/(inMax-inMin);
+    pct = clamp( pct, 0.0, 1.0);
     return pct * (outMax-outMin) + outMin;
 }
 
