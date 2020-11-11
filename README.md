@@ -10,18 +10,22 @@ November 17 & 19 2020
 * Random & Noise
 * Grids & Patterns
 
-# Shaders
+# Shaders (Day I)
 * Hello World
 * Mouse Interaction
 * Functions & Curves
+* Synthesis
 * Additive Synth
 * FM Synthesis
 * Shaping I (Rectangle)
 * Shaping II (Circle)
 * Layering Shapes
-* Random Square (RGB)
+
+# Shaders (Day II)
+* Random Square I (RGB)
 * Random Square II
 * Random Square III
+* Shaping III (Perlin Noise)
 
 # Helpers
 * Helpers.glsl
