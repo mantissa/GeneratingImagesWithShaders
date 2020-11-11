@@ -1,5 +1,5 @@
 // Author:
-// Title: Grids & Patterns
+// Title: Grids (Animated)
 
 #ifdef GL_ES
 precision mediump float;
@@ -39,7 +39,8 @@ void main() {
         st.y += random(vec2(cell.x, 0.5));
     //}
     
-    st.y -= u_time * 0.05;
+    //st.y -= u_time * 0.05;
+    st.y -= u_time * (random( vec2(cell.x, 10.))*0.15+0.025);
     
     xy = st;
     xy *= 4.;

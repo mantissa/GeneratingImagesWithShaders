@@ -1,5 +1,5 @@
-// Author:
-// Title: Shaping I
+// Author: Jeremy Rotsztain 
+// Title: Shaping I: Rectangle
 
 #ifdef GL_ES
 precision mediump float;
@@ -28,10 +28,10 @@ void main() {
     vec3 color = vec3(0.);
 
     // show pixels that are less than 0.8
-    color.r = step( st.x, 0.8);
+    color.r = step(0.2, st.x);
     
     // multiply by pixels that are less than 0.8 (inverted x)
-    color.r *= step(1.0-st.x, 0.8);
+    color.r *= step(0.2, 1.0-st.x);
     
     // do the same on the green axis
     //color.g = step( st.y, 0.8);
@@ -39,8 +39,8 @@ void main() {
     
     // make a red square (for malevich)
     // disable green channel first!
-    color.r *= step( st.y, 0.8);
-    color.r *= step(1.0-st.y, 0.8);
+    color.r *= step( 0.2, st.y);
+    color.r *= step( 0.2, 1.0-st.y);
     
     gl_FragColor = vec4(color, 1.0);
 }
