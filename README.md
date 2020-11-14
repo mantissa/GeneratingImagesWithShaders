@@ -36,7 +36,7 @@ November 17 & 19 2020
 # Day II
 * Review
 * [Animation](Animation.frag)
-* Exercise II: Try animating the color of the shapes (i.e. lerp between 2 colors)
+* Exercise II: Try animating the color of the shapes (i.e. lerp between or mix 2 colors)
 * [Random Square I (RGB)](Random_Square_I_(RGB).frag)
 * [Random Square II (Animated)](Random_Square_II.frag)
 * [Noise I (RGB)](Noise_I.frag)
@@ -51,7 +51,8 @@ November 17 & 19 2020
 * Helpers.glsl
 
 # Resources
-* [Book of Shaders](https://thebookofshaders.com/)
-* [2D distance functions](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)
+* [Book of Shaders](https://thebookofshaders.com/) by Patricio Gonzales Vivo & Jen Lowe
+* [IQ's 2D distance functions](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)
+* [Shadershop](http://tobyschachman.com/Shadershop/) by Toby Schachman
 
 
