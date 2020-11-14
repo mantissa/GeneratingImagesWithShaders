@@ -21,7 +21,8 @@ November 17 & 19 2020
 # Day I
 * [Hello World](Hello_World.frag)
 * [Mouse Interaction](Mouse_Interaction.frag)
-* [Gradients I](Gradients_I.frag) & [Gradients II](Gradients_II.frag)
+* Mixing Colors: [RGB Gradients I](Gradients_I.frag) & [Gradients II (Multi-Color)](Gradients_II.frag)
+* [HSB Color space](HSB_Color_Space.frag) 
 * [Functions & Curves I](Functions_&_Curves_I.frag)
 * [Functions & Curves II](Functions_&_Curves_II.frag)
 * Exercise I: Create a gradient using 3 different functions/curves. Play with frequency, amplitude & phase. If you're done, switch to a HSV gradient. Then, try additing time (u_time) into the mix.
