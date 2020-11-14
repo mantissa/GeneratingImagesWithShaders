@@ -21,15 +21,15 @@ November 17 & 19 2020
 # Day I
 * [Hello World](Hello_World.frag)
 * [Mouse Interaction](Mouse_Interaction.frag)
-* [Functions & Curves](Functions_&_Curves_I)
-* [Functions & Curves I](Functions_&_Curves_II)
+* [Functions & Curves I](Functions_&_Curves_I.frag)
+* [Functions & Curves II](Functions_&_Curves_II.frag)
 * Exercise I: Create a gradient using 3 different functions/curves. Play with frequency, amplitude & phase. If you're done, switch to a HSV gradient. Then, try additing time (u_time) into the mix.
-* Writing Custom Functions
-* Synthesis I: Additive Synth
-* Synthesis II: FM Synthesis
-* Grids
-* Shaping I: Rectangle
-* Shaping II: Circle
+* [Writing Custom Functions](Custom_Functions)
+* [Synthesis I: Additive Synth](Additive_Synth.frag)
+* [Synthesis II: FM Synthesis](FM_Synth.frag)
+* [Grids I](Grids_I.frag) & [Grids II](Grids_II.frag) 
+* [Shaping I: Rectangle](Shaping_I_(Rectangle).frag)
+* [Shaping I: Circles](Shaping_I_(Circles).frag)
 
 # Day II
 * Review
