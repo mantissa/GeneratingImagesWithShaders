@@ -1,4 +1,4 @@
-// Author: @Mantissa
+// Author: Jeremy Rotsztain @ InterAccess
 // Title: LayeringShapes
 
 #ifdef GL_ES
@@ -65,55 +65,64 @@ float random (vec2 st) {
 }
 
 void main() {
+    
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
     st.x *= u_resolution.x/u_resolution.y;
 
+    // blue background
     vec3 color = vec3(0.3, 0.0, 0.9);
     
+    // draw 10 layers/shapes
     for(float i=0.; i<10.; i++){
         
         float speed = random(vec2(101.0, i*100.))*1.2+0.1;
         float el = u_time * speed;
         float tt = floor(u_time * speed);
         
+        // position #1
         vec2 xy;
         xy.x = random(vec2(10.0, tt+i*100.))*0.8+0.1;
         xy.y = random(vec2(101.0, tt+i*100.))*0.8+0.1;
         
+        // position #2
         vec2 xy2;
         xy2.x = random(vec2(10.0, (tt+1.)+i*100.))*0.8+0.1;
         xy2.y = random(vec2(101.0, (tt+1.)+i*100.))*0.8+0.1;
         
+        // lerp from 1 to 2
         xy = mix( xy, xy2, fract(el));
         
+        // scale #1 & #2
         float sc = random(vec2(201.0, tt+i*100.))*0.2+0.3;
         float sc2 = random(vec2(201.0, (tt+1.0)+i*100.))*0.2+0.3;
         
+        // lerp from scale 1 to 2
         sc = mix( sc, sc2, fract(el));
         
+        // random color
         vec3 fgcolor = vec3(0.0, 0.0, 0.0);
         fgcolor.r = random(vec2(301.0, i));
         fgcolor.g = random(vec2(401.0, i));
         fgcolor.b = random(vec2(501.0, i));
         
-        float sh = random(vec2(101.0, i*100.));
+        // random shape
+        float shape = random(vec2(101.0, i*100.));
         
-        if( sh < 0.33){
+        float alpha = 1.0;
+        
+        if( shape < 0.33){
             
-             color =  mix( color, fgcolor, draw_rect( st, xy, sc)*0.7);
+             color =  mix( color, fgcolor, draw_rect( st, xy, sc)*alpha);
             
-        } else if( sh < 0.66){
+        } else if( shape < 0.66){
             
-             color =  mix( color, fgcolor, draw_circle( st, xy, sc)*0.7);
+             color =  mix( color, fgcolor, draw_circle( st, xy, sc)*alpha);
             
         } else {
             
-            color =  mix( color, fgcolor, draw_triangle( st, xy, sc)*0.7);
+            color =  mix( color, fgcolor, draw_triangle( st, xy, sc)*alpha);
         }
-        
-       
     }
-    
 
     gl_FragColor = vec4(color,1.0);
 }

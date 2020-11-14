@@ -1,5 +1,5 @@
-// Author:
-// Title: Polygon II
+// Author: Jeremy Rotsztain
+// Title: Polygon Grid
 
 #ifdef GL_ES
 precision mediump float;
@@ -11,8 +11,6 @@ uniform float u_time;
 
 #define PI 3.1415926535
 #define TWO_PI 6.283185307
-
-
 
 vec3 permute(vec3 x) { return mod(((x*34.0)+1.0)*x, 289.0); }
 
@@ -96,6 +94,10 @@ vec2 circleNoise( vec2 xy ){
     return noise;
 }
 
+float pointRotation( vec2 ij){
+    return snoise(ij +  vec2(100.0, u_time*0.03)) * 0.1 *TWO_PI;
+}
+
 void main() {
     
     // get the xy coordinate & normalize to [0, 1] range
@@ -108,19 +110,16 @@ void main() {
     vec2 ij = floor(xy);
     st = fract( xy );
     
-    //st.x += pow(snoise(st0*3.5+vec2(100., u_time*0.2)), 3.)*0.05-0.025;
-    //st.y += pow(snoise(st0*3.5+vec2(u_time*0.2, 100.)), 1.)*0.05-0.025;
-    
-    
-    float radius = 0.5;
-    float drift = 0.55;
+    float radius = 0.6;
+    float drift = 0.3;
     float rotation = snoise( ij + vec2(0.0, u_time*0.03))*TWO_PI;
+    float angle = snoise(ij +  vec2(100.0, u_time*0.03)) * 2.5 *TWO_PI;;
     
-    vec2 v0 = vec2(0.5) + circlePoint(rotation, radius) + circleNoise( ij + vec2(0.) ) * drift; //0.2*cos( 0.40*u_time + vec2(0.0,2.00) + 0.0 );
-	vec2 v1 = vec2(0.5) + circlePoint(rotation+TWO_PI/5., radius) + circleNoise( ij +vec2(2.) ) * drift; //+ 0.2*cos( 0.45*u_time + vec2(0.0,1.50) + 1.0 );
-	vec2 v2 = vec2(0.5) + circlePoint(rotation+2.0*TWO_PI/5., radius) + circleNoise( ij +vec2(4.) ) * drift; //0.2*cos( 0.50*u_time + vec2(0.0,3.00) + 2.0 );
-	vec2 v3 = vec2(0.5) + circlePoint(rotation+3.0*TWO_PI/5., radius) + circleNoise( ij +vec2(8.) ) * drift; //0.2*cos( 0.55*u_time + vec2(0.0,2.00) + 4.0 );
-    vec2 v4 = vec2(0.5) + circlePoint(rotation+4.0*TWO_PI/5., radius) + circleNoise( ij +vec2(14.) ) * drift; //0.2*cos( 0.60*u_time + vec2(0.0,1.00) + 5.0 );
+    vec2 v0 = vec2(0.5) + circlePoint(pointRotation(ij+vec2(0))+rotation, radius) + circleNoise( ij + vec2(0.) ) * drift; 
+	vec2 v1 = vec2(0.5) + circlePoint(pointRotation(ij+vec2(1))+rotation+TWO_PI/5., radius) + circleNoise( ij +vec2(2.) ) * drift; 
+	vec2 v2 = vec2(0.5) + circlePoint(pointRotation(ij+vec2(2))+rotation+2.0*TWO_PI/5., radius) + circleNoise( ij +vec2(4.) ) * drift; 
+	vec2 v3 = vec2(0.5) + circlePoint(pointRotation(ij+vec2(3))+rotation+3.0*TWO_PI/5., radius) + circleNoise( ij +vec2(8.) ) * drift; 
+    vec2 v4 = vec2(0.5) + circlePoint(pointRotation(ij+vec2(4))+rotation+4.0*TWO_PI/5., radius) + circleNoise( ij +vec2(14.) ) * drift; 
     
     // add points
     vec2 poly[5]; 

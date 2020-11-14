@@ -42,7 +42,8 @@ void main() {
     // smoothstep
     // smooth threshold ... interpolate between [0, 1] while in range of val 1 and 2
     // if less, 0. if greater 1.
-    //amt = smoothstep(0.4, 0.6, st.x);
+    // uses cubic interpolation
+    //amt = smoothstep(0.15, 0.85, st.x);
     
     // sin
     // repeating sinusodal curve
@@ -50,10 +51,11 @@ void main() {
     //amt = sin( st.x * TWO_PI);
     //amt = sin( st.x * TWO_PI ) * 0.5 + 0.5; // scale into [0, 1] range
     
+    // visualize 'amt' as red value
     vec3 color = vec3( amt, 0.2, 0.4);
     
-    // visualize the values
-    //color.rgb = mix( color.rgb, vec3(0.0, 1.0, 0.0), plot( st, color.r));
+    // graph the value using plot
+    color.rgb = mix( color.rgb, vec3(0.0, 1.0, 0.0), plot( st, color.r));
     
     gl_FragColor = vec4(color, 1.0);
 }

@@ -51,7 +51,11 @@ vec2 gridWithReflections( vec2 xy, vec2 dimensions){
 
 // just like processing!!
 
-float map();
+float map( float val, float inMin, float inMax, float outMin, float outMax){
+    float pct = (val-inMin)/(inMax-inMin);
+    pct = clamp( pct, 0.0, 1.0);
+    return pct * (outMax-outMin) + outMin;
+}
 
 vec3 permute(vec3 x) { return mod(((x*34.0)+1.0)*x, 289.0); }
 
