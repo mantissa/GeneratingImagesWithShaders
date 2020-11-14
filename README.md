@@ -21,12 +21,13 @@ November 17 & 19 2020
 # Day I
 * [Hello World](Hello_World.frag)
 * [Mouse Interaction](Mouse_Interaction.frag)
-* Mixing Colors: [RGB Gradients I](Gradients_I.frag) & [Gradients II (Multi-Color)](Gradients_II.frag)
-* [HSB Color space](HSB_Color_Space.frag) 
+* Mixing Colors: [RGB Gradients I](Gradients_I.frag) 
+* [HSB Color Space](HSB_Color_Space.frag) 
 * [Functions & Curves I](Functions_&_Curves_I.frag)
 * [Functions & Curves II](Functions_&_Curves_II.frag)
 * Exercise I: Create a gradient using 3 different functions/curves. Play with frequency, amplitude & phase. If you're done, switch to a HSV gradient. Then, try additing time (u_time) into the mix.
 * [Writing Custom Functions](Custom_Functions.frag)
+* [Gradients II (Multi-Color)](Gradients_II.frag)
 * [Synthesis I: Additive Synth](Additive_Synth.frag)
 * [Synthesis II: FM Synthesis](FM_Synth.frag)
 * [Grids I](Grids_I.frag) & [Grids II](Grids_II_(HSB).frag) 
@@ -34,14 +35,15 @@ November 17 & 19 2020
 
 # Day II
 * Review
-* Animation
+* [Animation](Animation.frag)
 * Exercise II: Try animating the color of the shapes (i.e. lerp between 2 colors)
-* Random Square I (RGB)
-* Random Square II (Animated)
-* Noise I (RGB)
-* Noise II (Modulated Circle)
+* [Random Square I (RGB)](Random_Square_I_(RGB).frag)
+* [Random Square II (Animated)](Random_Square_II_(Animated).frag)
+* [Noise I (RGB)](Noise_I.frag)
+* [Noise II (Modulated Circle)](Noise_II.frag)
 
 # Advanced Examples
+* Noise I
 * Layering Shapes
 * Polygon Grid
 
