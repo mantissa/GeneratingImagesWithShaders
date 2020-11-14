@@ -11,6 +11,8 @@ uniform float u_time;
 
 #define PI 3.1415926535
 
+// from 
+
 vec3 hsv2rgb(vec3 c)
 {
     vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
@@ -27,19 +29,28 @@ void main() {
     // set a fill color with hsv
     // store as vec3
     vec3 hsv;
-    hsv.r = sin(u_time * PI * 0.2); // animate hue with sin wave
-    hsv.g = 1.0;
-    hsv.b = 1.0;
+    hsv.r = sin(u_time * PI * 0.1); // animate hue with sin wave
+    hsv.g = 1.0; // saturation
+    hsv.b = 1.0; // brightness
     
-    // color wash
-    // hsv.r = sin(u_time * PI * 0.2 + st.x*0.1); 
+    if( false ){
+        
+         // color wash
+    	// same calculation as above with slight x-offset
+    	hsv.r = sin(u_time * PI * 0.1 + st.x*0.1); 
+    }
+   
+    if( false ){
+     
+        // distanced based hue
+    	float d = distance( st, vec2(0.5));
+    	hsv.r = d;
     
-    // distanced based hue
-    float d = distance( st, vec2(0.5));
-    //hsv.r = d;
-    //hsv.r = sin(u_time*PI*0.2+d);
-
-    // use function to translate hsv to rgb color space
+    	// animate hue over time
+    	//hsv.r = sin(u_time*PI*0.2+d);
+    }
+    
+    // use custom function to translate hsv to rgb color space
     vec3 color = hsv2rgb(hsv);
     
     gl_FragColor = vec4(color, 1.0);
