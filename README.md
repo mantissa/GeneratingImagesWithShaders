@@ -24,10 +24,10 @@ November 17 & 19 2020
 * [Functions & Curves I](Functions_&_Curves_I.frag)
 * [Functions & Curves II](Functions_&_Curves_II.frag)
 * Exercise I: Create a gradient using 3 different functions/curves. Play with frequency, amplitude & phase. If you're done, switch to a HSV gradient. Then, try additing time (u_time) into the mix.
-* [Writing Custom Functions](Custom_Functions)
+* [Writing Custom Functions](Custom_Functions.frag)
 * [Synthesis I: Additive Synth](Additive_Synth.frag)
 * [Synthesis II: FM Synthesis](FM_Synth.frag)
-* [Grids I](Grids_I.frag) & [Grids II](Grids_II.frag) 
+* [Grids I](Grids_I.frag) & [Grids II](Grids_II_(HSB).frag) 
 * [Shaping I: Rectangle](Shaping_I_(Rectangle).frag)
 * [Shaping I: Circles](Shaping_I_(Circles).frag)
 
