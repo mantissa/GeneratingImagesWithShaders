@@ -19,7 +19,7 @@ November 17 & 19 2020
 * IQ https://www.shadertoy.com/view/wlsfRn
 
 # Day I
-* [Hello World](Hello World.frag)
+* [Hello World](Hello_World.frag)
 * Mouse Interaction
 * Functions & Curves
 * Exercise I: Create a gradient using 3 different functions/curves. Play with frequency, amplitude & phase. If you're done, switch to a HSV gradient. Then, try additing time (u_time) into the mix.
