@@ -31,7 +31,9 @@ November 17 & 19 2020
 * Shaping II: Circle
 
 # Day II
+* Review
 * Animation
+* Exercise II: Try animating the color of the shapes (i.e. lerp between 2 colors)
 * Random Square I (RGB)
 * Random Square II (Animated)
 * Noise I (RGB)
@@ -45,7 +47,7 @@ November 17 & 19 2020
 * Helpers.glsl
 
 # Resources
-* Book of Shaders
-* 
+* [Book of Shaders] (https://thebookofshaders.com/)
+* [2D distance functions] (https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)
 
 
