@@ -1,4 +1,5 @@
-// Author: J. Rostsztain
+// Author: Jeremy Rotsztain
+// Workshop: Generating Images with Shaders @ InterAccess, 2020
 // Title: FM Synthesis
 
 #ifdef GL_ES

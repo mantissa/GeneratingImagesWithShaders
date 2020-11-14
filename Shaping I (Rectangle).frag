@@ -1,4 +1,5 @@
 // Author: Jeremy Rotsztain 
+// Workshop: Generating Images with Shaders @ InterAccess, 2020
 // Title: Shaping I: Rectangle
 
 #ifdef GL_ES

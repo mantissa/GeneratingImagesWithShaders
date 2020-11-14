@@ -1,4 +1,5 @@
 // Author: Jeremy Rotsztain
+// Workshop: Generating Images with Shaders @ InterAccess, 2020
 // Title: Mouse interaction
 
 #ifdef GL_ES

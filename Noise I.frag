@@ -1,5 +1,6 @@
-// Author:
-// Title: Shaping III: Noise
+// Author: Jeremy Rotsztain
+// Workshop: Generating Images with Shaders @ InterAccess, 2020
+// Title: Noise I
 
 #ifdef GL_ES
 precision mediump float;
@@ -9,10 +10,8 @@ uniform vec2 u_resolution;
 uniform vec2 u_mouse;
 uniform float u_time;
 
-#define PI 3.1415926535
-
 // Simplex 2D noise
-//
+
 vec3 permute(vec3 x) { return mod(((x*34.0)+1.0)*x, 289.0); }
 
 float snoise(vec2 v){
@@ -42,33 +41,30 @@ float snoise(vec2 v){
   return 130.0 * dot(m, g);
 }
 
+float snoiseu( vec2 xy){
+    
+    return snoise( xy ) * 0.5 + 0.5;
+}
+
+float plot( vec2 xy, float amt){
+    if( amt > xy.y - 0.006 && amt < xy.y + 0.006) return 1.0;
+    return 0.;
+}
+
 void main() {
     
-    // get the xy coordinate & normalize to [0, 1] range
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
     st.x *= u_resolution.x/u_resolution.y;
-    
-    vec2 xy = st; // copy of xy coordinates
-    
-    // add randomness to xy
-    st.x += snoise( st * 2. )*0.1;
-    st.y += snoise( st * 2. + vec2(100.))*0.1;
 
-    // set a fill color with rgb
+    // our canvas color
     vec3 color = vec3(0.);
-
-    // visualize the distance from the center
-    float dist = distance( st, vec2(0.5));
-    color.r = 1.0-dist;
     
-    // add randomness to dist 
-    //dist += snoise( st * 4. + vec2(200.))*0.1;
+    // red with 1D noise (unsigned)
+    float freq = 1.0;
+    color.r = snoiseu( vec2(st.x * freq, 0.) );
     
-    // now with slow movement
-    //dist += snoise( st * 5. + vec2(200., u_time*0.4))*0.1;
+    // plot the noise
+    color = mix( color, vec3(0., 1.0, 0.0), plot( st, color.r ));
     
-    // threshold the distance to create a circle
-    color.rgb = vec3(step( dist, 0.4));
-    
-    gl_FragColor = vec4(color, 1.0);
+    gl_FragColor = vec4(color,1.0);
 }

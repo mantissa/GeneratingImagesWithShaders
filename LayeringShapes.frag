@@ -1,4 +1,5 @@
 // Author: Jeremy Rotsztain @ InterAccess
+// Workshop: Generating Images with Shaders @ InterAccess, 2020
 // Title: LayeringShapes
 
 #ifdef GL_ES

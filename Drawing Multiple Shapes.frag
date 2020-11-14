@@ -1,4 +1,5 @@
-// Author:
+// Author: Jeremy Rotsztain
+// Workshop: Generating Images with Shaders @ InterAccess, 2020
 // Title: Drawing Multiple Shapes
 
 #ifdef GL_ES

@@ -33,9 +33,9 @@ November 17 & 19 2020
 # Day II
 * Animation
 * Random Square I (RGB)
-* Random Square II
-* Random Square III
-* Shaping III (Perlin Noise)
+* Random Square II (Animated)
+* Noise I (RGB)
+* Noise II (Modulated Circle)
 
 # Advanced Examples
 * Layering Shapes
