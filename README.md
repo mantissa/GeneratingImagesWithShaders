@@ -48,7 +48,7 @@ November 17 & 19 2020
 * [Polygon Grid](Polygon_Grid.frag)
 
 # Helpers
-* Helpers.glsl
+* [Helpers](Helpers.glsl)
 
 # Resources
 * [Book of Shaders](https://thebookofshaders.com/) by Patricio Gonzales Vivo & Jen Lowe
