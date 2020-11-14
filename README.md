@@ -47,7 +47,7 @@ November 17 & 19 2020
 * Helpers.glsl
 
 # Resources
-* [Book of Shaders] (https://thebookofshaders.com/)
-* [2D distance functions] (https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)
+* [Book of Shaders](https://thebookofshaders.com/)
+* [2D distance functions](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)
 
 
