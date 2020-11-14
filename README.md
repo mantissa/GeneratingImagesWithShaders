@@ -20,8 +20,9 @@ November 17 & 19 2020
 
 # Day I
 * [Hello World](Hello_World.frag)
-* Mouse Interaction
-* Functions & Curves
+* [Mouse Interaction](Mouse_Interaction.frag)
+* [Functions & Curves](Functions_&_Curves_I)
+* [Functions & Curves I](Functions_&_Curves_II)
 * Exercise I: Create a gradient using 3 different functions/curves. Play with frequency, amplitude & phase. If you're done, switch to a HSV gradient. Then, try additing time (u_time) into the mix.
 * Writing Custom Functions
 * Synthesis I: Additive Synth
