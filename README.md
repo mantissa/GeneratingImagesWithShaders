@@ -1,5 +1,5 @@
 # GeneratingImagesWithShaders
-A GLSL Shader Programming Workshop at InterAccess
+A GLSL Shader Programming Workshop at [InterAccess](https://interaccess.org/)
 November 17 & 19 2020
 
 # Outline
