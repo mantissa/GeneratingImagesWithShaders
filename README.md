@@ -24,6 +24,9 @@ November 17 & 19 2020
 # Pipeline
 ![Fragment Shaders in the Pipeline (from open.gl)](https://open.gl/media/img/c2_pipeline.png "Fragment Shaders in the Pipeline")
 
+# Platform
+All of these shaders will run in the [Book of Shaders Editor](http://editor.thebookofshaders.com/). Just copy & paste!
+
 # Day I: Tuesday
 * [Hello World](Hello_World.frag)
 * [Mouse Interaction](Mouse_Interaction.frag)
