@@ -39,11 +39,13 @@ November 17 & 19 2020
 * Exercise II: Try animating the color of the shapes (i.e. lerp between or mix 2 colors)
 * [Random Square I (RGB)](Random_Square_I_(RGB).frag)
 * [Random Square II (Animated)](Random_Square_II.frag)
+* [Random Colors](Random_Colors.frag)
 * [Noise I (RGB)](Noise_I.frag)
 * [Noise II (Modulated Circle)](Noise_II.frag)
 
 # Advanced Examples
 * [Noise I](Noise_I_(End).frag)
+* [Shaded Blobs](Shaded_Blobs.frag)
 * [Layering Shapes](Layering_Shapes.frag)
 * [Polygon Grid](Polygon_Grid.frag)
 
