@@ -1,6 +1,6 @@
-![Workshop Header Image](https://interaccess.org/sites/default/files/styles/paralax/public/generating%20images%20with%20shaders.png "Workshop Header Image")
 
 # GeneratingImagesWithShaders
+![Workshop Header Image](https://interaccess.org/sites/default/files/styles/paralax/public/generating%20images%20with%20shaders.png "Workshop Header Image")
 A GLSL Shader Programming Workshop at [InterAccess](https://interaccess.org/)\
 November 17 & 19 2020
 
