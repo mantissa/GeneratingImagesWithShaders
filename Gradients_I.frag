@@ -12,14 +12,16 @@ uniform float u_time;
     
 void main() {
     
-    // calculate our canvas
+    // normalize our canvas
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
+    
+    // fix for aspect ration
     st.x *= u_resolution.x/u_resolution.y;
     
-    // set color #1 (manually)
+    // set color #1 manually (peach)
     vec3 colorA = vec3(1.000,0.600,0.405);
     
-    // pick color #2 (manually)
+    // pick color #2 manually (blue)
     vec3 colorB = vec3(0.390,0.225,1.000);
     
     // use our x coordinate to 'mix' between the two colors
