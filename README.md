@@ -24,6 +24,9 @@ November 17 & 19 2020
 # Pipeline
 ![Fragment Shaders in the Pipeline (from open.gl)](https://open.gl/media/img/c2_pipeline.png "Fragment Shaders in the Pipeline")
 
+# Platform
+All of these shaders will run in the [Book of Shaders Editor](http://editor.thebookofshaders.com/). Just copy & paste!
+
 # Day I: Tuesday
 * [Hello World](Hello_World.frag)
 * [Mouse Interaction](Mouse_Interaction.frag)
@@ -39,7 +42,7 @@ November 17 & 19 2020
 * Shaping: [Square](Shaping_I_(Square).frag) & [Circle](Shaping_II_(Circle).frag)
 
 # Day II: Thursday
-* Review
+* Review and/or questions
 * [Grids I](Grids_I.frag) & [Grids II (HSB)](Grids_II_(HSB).frag) 
 * [Animation](Animation.frag)
 * Exercise II: Try animating the color of the shapes (i.e. lerp between or mix 2 colors)
