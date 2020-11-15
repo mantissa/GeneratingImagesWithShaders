@@ -1,6 +1,6 @@
 // Author: Jeremy Rotsztain 
 // Workshop: Generating Images with Shaders @ InterAccess, 2020
-// Title: Shaping I: Rectangle
+// Title: Shaping I: Square
 
 #ifdef GL_ES
 precision mediump float;
@@ -28,20 +28,17 @@ void main() {
     // set a fill color with rgb
     vec3 color = vec3(0.);
 
-    // show pixels that are less than 0.8
+    // show x pixels that are greater than 0.2
     color.r = step(0.2, st.x);
     
-    // multiply by pixels that are less than 0.8 (inverted x)
-    color.r *= step(0.2, 1.0-st.x);
-    
-    // do the same on the green axis
-    //color.g = step( st.y, 0.8);
-    //color.g *= step(1.0-st.y, 0.8);
-    
+    // show x pixels that are less than 0.8
+    //color.g = 1.0-step(0.8, st.x);
+    color.r *= 1.0-step(0.8, st.x);
+
     // make a red square (for malevich)
-    // disable green channel first!
+    // note: disable green channel first!
     color.r *= step( 0.2, st.y);
-    color.r *= step( 0.2, 1.0-st.y);
+    color.r *= 1.0-step( 0.8, st.y);
     
     gl_FragColor = vec4(color, 1.0);
 }

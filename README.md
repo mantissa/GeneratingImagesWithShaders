@@ -36,7 +36,7 @@ November 17 & 19 2020
 * [Gradients II (Multi-Color)](Gradients_II.frag)
 * [Synthesis I: Additive Synth](Additive_Synth.frag)
 * [Synthesis II: FM Synthesis](FM_Synth.frag)
-* Shaping: [Rectangle](Shaping_I_(Rectangle).frag) & [Circle](Shaping_II_(Circle).frag)
+* Shaping: [Square](Shaping_I_(Square).frag) & [Circle](Shaping_II_(Circle).frag)
 
 # Day II: Thursday
 * Review
