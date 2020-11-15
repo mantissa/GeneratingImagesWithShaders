@@ -19,7 +19,7 @@ void main() {
     // multiply the canvas by an integer
     // range becomes [0,4]
     vec2 xy = st;
-    xy *= 4.;
+    xy *= 4.; //vec2(4., 2.); // this can also be a vec2
     
     // get the cell # [0,3] using floor
     vec2 cell = floor( xy);
@@ -32,6 +32,13 @@ void main() {
     vec3 color;
     color.r = pct.r;
     color.g = pct.g;
+    
+    //color.r = cell.x/4.;
+    //color.g = cell.y/4.;
+    
+    // we're just looking at coordinates here, but imagine 
+    // that we can use the cell indices to draw something different 
+    // in each cell like https://www.instagram.com/p/CHmWCSrH4EV/
 
     gl_FragColor = vec4(color, 1.0);
 }
