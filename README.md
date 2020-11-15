@@ -36,11 +36,11 @@ November 17 & 19 2020
 * [Gradients II (Multi-Color)](Gradients_II.frag)
 * [Synthesis I: Additive Synth](Additive_Synth.frag)
 * [Synthesis II: FM Synthesis](FM_Synth.frag)
-* [Grids I](Grids_I.frag) & [Grids II (HSB)](Grids_II_(HSB).frag) 
 * Shaping: [Rectangle](Shaping_I_(Rectangle).frag) & [Circle](Shaping_II_(Circle).frag)
 
 # Day II: Thursday
 * Review
+* [Grids I](Grids_I.frag) & [Grids II (HSB)](Grids_II_(HSB).frag) 
 * [Animation](Animation.frag)
 * Exercise II: Try animating the color of the shapes (i.e. lerp between or mix 2 colors)
 * [Random Square I (RGB)](Random_Square_I_(RGB).frag)
