@@ -18,7 +18,7 @@ November 17 & 19 2020
 * Char Stiles https://www.instagram.com/charstiles/
 * IQ https://www.shadertoy.com/view/wlsfRn
 
-# Day I
+# Day I: Tuesday
 * [Hello World](Hello_World.frag)
 * [Mouse Interaction](Mouse_Interaction.frag)
 * Mixing Colors: [RGB Gradients I](Gradients_I.frag) 
@@ -33,7 +33,7 @@ November 17 & 19 2020
 * [Grids I](Grids_I.frag) & [Grids II (HSB)](Grids_II_(HSB).frag) 
 * Shaping: [Rectangle](Shaping_I_(Rectangle).frag) & [Circle](Shaping_II_(Circle).frag)
 
-# Day II
+# Day II: Thursday
 * Review
 * [Animation](Animation.frag)
 * Exercise II: Try animating the color of the shapes (i.e. lerp between or mix 2 colors)
