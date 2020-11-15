@@ -1,4 +1,5 @@
-// Author:
+// Author: Jeremy Rotsztain 
+// Workshop: Generating Images with Shaders @ InterAccess, 2020
 // Title: Random Color
 
 #ifdef GL_ES
@@ -35,27 +36,19 @@ void main() {
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
     st.x *= u_resolution.x/u_resolution.y;
     
-    st.y -= 0.07*u_time;
+    //st.y -= 0.07*u_time;
     
     // multiply grid x 10 & then round up
     // 1.2 => 2.0
     // 8.9 => 9.0
-    vec2 grid = (st) * vec2(13.3, 13.1); //vec2(g1, g1*2.3);
+    vec2 grid = st * vec2(8.); 
     grid = floor( grid );
-    grid = mod( grid, 20. );
-    
+
     float cellR = random( grid )*1.;
-    float cellR2 = random( grid + vec2(100.) )*3.;
     float cellSpeed = random( grid + vec2(200.) )*3.;
-    float cellSpeed2 = random( vec2(grid.x, 0.) + vec2(200.) )*3.;
     
-    st.y -= cellSpeed2/20.*u_time;
-    
- 	vec2 grid2 = (st+vec2(cellR, cellR)) * vec2(4.6, 4); //vec2(g1, g1*2.3);
-    grid2 = floor( grid2 );
-    
-    float cellRand = random( grid*1. + grid2 + vec2(0, floor(u_time*cellSpeed+cellR)) );
-    float cellRand2 = random( grid*1. + grid2 + vec2(0., floor(u_time*cellSpeed+1.+cellR)) );
+    float cellRand = random( grid*1. + vec2(0, floor(u_time*cellSpeed+cellR)) );
+    float cellRand2 = random( grid*1. + vec2(0., floor(u_time*cellSpeed+1.+cellR)) );
     
     vec3 color = randomColor( cellRand );
     vec3 color2 = randomColor( cellRand2 );

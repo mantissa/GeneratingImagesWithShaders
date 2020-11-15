@@ -1,5 +1,6 @@
-// Author:
-// Title: Shaded Circle
+// Author: Jeremy Rotsztain 
+// Workshop: Generating Images with Shaders @ InterAccess, 2020
+// Title: Shaded Blob
 
 #ifdef GL_ES
 precision mediump float;
@@ -51,17 +52,9 @@ void main() {
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
     st.x *= u_resolution.x/u_resolution.y;
     
-    vec2 st0 = st;
-    
-    st *= 2.;
-    st.y += u_time*0.2;
-    st.x += snoise(st0*3.+ vec2(10.4, 0.4*u_time))*0.2;
-    st.y += snoise(st0*2.+ vec2(0.4, 0.1*u_time))*0.2;
-    st= fract(st);
-    
     float dist = distance( st, vec2(0.5));
     
-    float cc = (snoise(st*1.3+ st0*2.+vec2(100.4, 0.4*u_time))*0.5+0.5)*.5;
+    float cc = (snoise(st*2.+ vec2(100.4, 0.4*u_time))*0.5+0.5)*.5;
     
     float circ = step( dist, cc);
     

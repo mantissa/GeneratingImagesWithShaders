@@ -56,9 +56,9 @@ November 17 & 19 2020
 * [Shadershop](http://tobyschachman.com/Shadershop/) by Toby Schachman
 * [Shaders in Processing, Three.js, openFrameworks](https://thebookofshaders.com/04/)
 
-# Other Programming Tools
+# Other Programming Tools/Environments
 * [The Force](https://shawnlawson.github.io/The_Force/)
-* [kodelife](https://hexler.net/products/kodelife)
+* [kodelife](https://hexler.net/products/kodelife) ($)
 * [GLSL Sandbox](http://glslsandbox.com/)
 * [ShaderToy](https://www.shadertoy.com/)
 
