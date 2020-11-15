@@ -51,6 +51,7 @@ void main() {
     // note: values range [-1, 1]
     //amt = sin( st.x * TWO_PI);
     //amt = sin( st.x * TWO_PI ) * 0.5 + 0.5; // scale into [0, 1] range
+    //amt = sin( u_time + st.x * TWO_PI ) * 0.5 + 0.5; // animate with time as phase
     
     // visualize 'amt' as red value
     vec3 color = vec3( amt, 0.2, 0.4);
