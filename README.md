@@ -1,3 +1,5 @@
+![Workshop Header Image](https://interaccess.org/sites/default/files/styles/paralax/public/generating%20images%20with%20shaders.png "Workshop Header Image")
+
 # GeneratingImagesWithShaders
 A GLSL Shader Programming Workshop at [InterAccess](https://interaccess.org/)\
 November 17 & 19 2020
@@ -11,16 +13,16 @@ November 17 & 19 2020
 * Randomness & Noise
 * Grids & Patterns
 
-# Shader Artists
+# Artists Working with Shaders
 * Natalia Stuyk https://www.instagram.com/nataliastuyk/
 * Kynd https://www.instagram.com/kyndinfo/
-* Sean Zellmer https://www.instagram.com/lejeunerenard/ 
+* Andrew Benson https://pixlpa.com/
 * Char Stiles https://www.instagram.com/charstiles/
+* Sean Zellmer https://www.instagram.com/lejeunerenard/ 
 * IQ https://www.shadertoy.com/view/wlsfRn
 
 # Pipeline
 ![Fragment Shaders in the Pipeline (from open.gl)](https://open.gl/media/img/c2_pipeline.png "Fragment Shaders in the Pipeline")
-
 
 # Day I: Tuesday
 * [Hello World](Hello_World.frag)
