@@ -15,6 +15,8 @@ void main() {
     // get the xy coordinate in pixels & normalize to [0, 1] range
     // by dividing by width (500 x 500 px)
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
+    
+    // fix for aspect ratio
     st.x *= u_resolution.x/u_resolution.y;
 
     // set a fill color with r,g,b,a 
