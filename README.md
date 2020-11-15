@@ -19,7 +19,7 @@ November 17 & 19 2020
 * IQ https://www.shadertoy.com/view/wlsfRn
 
 # Pipeline
-![Semantic description of image](https://open.gl/media/img/c2_pipeline.png "Image Title")
+![Fragment Shaders in the Pipeline (from open.gl)](https://open.gl/media/img/c2_pipeline.png "Fragment Shaders in the Pipeline")
 
 
 # Day I: Tuesday
