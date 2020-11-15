@@ -18,6 +18,10 @@ November 17 & 19 2020
 * Char Stiles https://www.instagram.com/charstiles/
 * IQ https://www.shadertoy.com/view/wlsfRn
 
+# Pipeline
+![Semantic description of image](https://open.gl/media/img/c2_pipeline.png "Image Title")
+
+
 # Day I: Tuesday
 * [Hello World](Hello_World.frag)
 * [Mouse Interaction](Mouse_Interaction.frag)
