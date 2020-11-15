@@ -54,5 +54,5 @@ November 17 & 19 2020
 * [Book of Shaders](https://thebookofshaders.com/) by Patricio Gonzales Vivo & Jen Lowe
 * [IQ's 2D distance functions](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)
 * [Shadershop](http://tobyschachman.com/Shadershop/) by Toby Schachman
-
+* [Shaders in Processing, Three.js, openFrameworks](https://thebookofshaders.com/04/)
 
