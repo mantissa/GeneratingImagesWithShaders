@@ -24,6 +24,12 @@ float additive_synth( float x, float time ){
     return br;
 }
 
+float map( float val, float inMin, float inMax, float outMin, float outMax){
+    float pct = (val-inMin)/(inMax-inMin);
+    pct = clamp( pct, 0.0, 1.0);
+    return pct * (outMax-outMin) + outMin;
+}
+
 void main() {
     
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
@@ -46,12 +52,13 @@ void main() {
     // add layers of sine waves with different frequencies & amplitudes
     // frequencies can be applied to time & to space (the canvas)
     color.r = sin( st.y * TWO_PI - u_time ) * 0.5;
-    color.r += sin(  st.y * TWO_PI - u_time * 3. ) * 0.25;
-    color.r += sin(  st.y * TWO_PI - u_time * 4.25 ) * 0.125;
-    color.r += sin(  st.y * TWO_PI - u_time * 7.5 ) * 0.0625;
+    //color.r += sin(  st.y * TWO_PI * 2.3 - u_time * 3. ) * 0.25;
+    //color.r += sin(  st.y * TWO_PI * 4.12 - u_time * 4.25 ) * 0.125;
+    //color.r += sin(  st.y * TWO_PI * 8.93 - u_time * 7.5 ) * 0.0625;
     
-    // remap [-1, 1] => [0, 1] with cubic interpolation
-    color.r = smoothstep(-1., 1., color.r);
+    // remap [-1, 1] => [0, 1] with linear interpolation
+    color.r = map(color.r, -0.9375, 0.9375, 0.0, 1.);
+    //color.r = smoothstep(-1., 1., color.r); // or with cubic interpolation
     
     // apply 'additive synth' to green & blue (with variation)
     if( false ){
