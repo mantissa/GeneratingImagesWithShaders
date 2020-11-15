@@ -15,7 +15,7 @@ void main() {
     // normalize our canvas
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
     
-    // fix for aspect ration
+    // fix for aspect ratio
     st.x *= u_resolution.x/u_resolution.y;
     
     // set color #1 manually (peach)
