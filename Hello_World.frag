@@ -12,12 +12,13 @@ uniform float u_time;
 
 void main() {
     
-    // get the xy coordinate & normalize to [0, 1] range
+    // get the xy coordinate in pixels & normalize to [0, 1] range
+    // by dividing by width (500 x 500 px)
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
     st.x *= u_resolution.x/u_resolution.y;
 
     // set a fill color with r,g,b,a 
-    // store as vec4
+    // store as vec4 (normalized)
     vec4 color = vec4(1., 0., 0., 1.);
     //color.r = 0.0;
     //color.g = 1.0;
@@ -26,7 +27,7 @@ void main() {
     // create a gradient
     //color.r = st.x;
     //color.g = st.y;
-	//color.b = 1.0-st.x;
+    //color.b = 1.0-st.x;
     
     gl_FragColor = color;
 }
