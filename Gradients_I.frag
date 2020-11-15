@@ -19,7 +19,7 @@ void main() {
     // set color #1 (manually)
     vec3 colorA = vec3(1.000,0.600,0.405);
     
-    // pick colro #2 (manually)
+    // pick color #2 (manually)
     vec3 colorB = vec3(0.390,0.225,1.000);
     
     // use our x coordinate to 'mix' between the two colors

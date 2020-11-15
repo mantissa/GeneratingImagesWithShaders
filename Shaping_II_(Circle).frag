@@ -40,5 +40,7 @@ void main() {
     // https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/step.xhtml
     color.rgb = vec3(1.0-step( 0.40, dist));
     
+    // soft edge?
+    
     gl_FragColor = vec4(color, 1.0);
 }
