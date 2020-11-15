@@ -26,7 +26,7 @@ void main() {
     // store color as vec3
     vec3 color;
     color.r = u_mouse.x / u_resolution.x;
-    color.g = u_mouse.y / u_resolution.y;
+    //color.g = u_mouse.y / u_resolution.y;
     //color.b = st.y; // gradient on blue
     
     gl_FragColor = vec4(color, 1.0);
