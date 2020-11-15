@@ -42,7 +42,7 @@ All of these shaders will run in the [Book of Shaders Editor](http://editor.theb
 * Shaping: [Rectangle](Shaping_I_(Rectangle).frag) & [Circle](Shaping_II_(Circle).frag)
 
 # Day II: Thursday
-* Review
+* Review and/or questions
 * [Grids I](Grids_I.frag) & [Grids II (HSB)](Grids_II_(HSB).frag) 
 * [Animation](Animation.frag)
 * Exercise II: Try animating the color of the shapes (i.e. lerp between or mix 2 colors)
