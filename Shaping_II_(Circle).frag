@@ -25,22 +25,32 @@ void main() {
     float dist = distance( st, vec2(0.50,0.50));
 
     // modulate the distance I
-    //dist += cos( angle * 16. + u_time*PI)*0.04;
-    
+    if( false ){
+        vec2 dd = st - vec2(0.5);
+    	float angle = atan( dd.y / dd.x); // calculate the angle (in radians!)
+        dist += cos( angle * 16. + u_time*PI)*0.04;
+    }
+   
     // modulate the distance II
-    vec2 dd = st - vec2(0.5);
-    float angle = atan( dd.y / dd.x); // calculate the angle
-    //dist += cos( angle * 16. + u_time*PI) * (sin( angle * 24. + u_time*PI*2.) * 0.5 + 0.5) * 0.08;
+    if( false ){
+    	
+    	vec2 dd = st - vec2(0.5);
+    	float angle = atan( dd.y / dd.x); // calculate the angle (in radians)
+    	dist += cos( angle * 16. + u_time*PI) * (sin( angle * 24. + u_time*PI*2.) * 0.5 + 0.5) * 0.08;
+	}
     
     // modulate the distance III
-    //dist += cos( u_time * PI * 0.5 + st.x * 4. ) * .9;
-    //dist *= sin( u_time * 1. * PI + st.y * 2. ) * 2.5;
+    if( false ){
+    	dist += cos( cos( 0.2 * u_time * PI * 3.5 + st.x * 40. ) * PI * 0.2 + u_time * PI * 0.5 + st.x * 8. ) * .3;
+    	dist *= sin( u_time * 1. * PI + st.y * 6. ) * 2.5;
+    }
     
     // threshold the distance to create a circle
     // https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/step.xhtml
     color.rgb = vec3(1.0-step( 0.40, dist));
     
-    // soft edge?
+    // w/soft edge
+    // color.rgb = vec3(1.0-smoothstep( 0.3, 0.4, dist));
     
     gl_FragColor = vec4(color, 1.0);
 }
