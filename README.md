@@ -67,6 +67,7 @@ All of these shaders will run in the [Book of Shaders Editor](http://editor.theb
 * [Book of Shaders](https://thebookofshaders.com/) by Patricio Gonzales Vivo & Jen Lowe
 * [IQ's 2D distance functions](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)
 * [Shadershop](http://tobyschachman.com/Shadershop/) by Toby Schachman
+* [GLSL Easing Functions (tweens)](https://github.com/glslify/glsl-easings)
 * [Shaders in Processing, Three.js, openFrameworks](https://thebookofshaders.com/04/)
 
 # Other Programming Tools/Environments
