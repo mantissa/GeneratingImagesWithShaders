@@ -22,6 +22,8 @@ void main() {
     // set a fill color with r,g,b,a 
     // store as vec4 (normalized)
     vec4 color = vec4(1., 0., 0., 1.);
+    
+    // set individual rgb components
     //color.r = 0.0;
     //color.g = 1.0;
     //color.b = 0.5;
