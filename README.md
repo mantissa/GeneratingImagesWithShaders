@@ -13,6 +13,15 @@ November 17 & 19 2020
 * Randomness & Noise
 * Grids & Patterns
 
+# Shaders
+* Shaders are tiny programs that run on your computer’s GPU
+* Used extensively in gaming to create color, lighting, materials, special effects.
+* Some shaders can also create geometry and compute massive amounts of information
+* Shaders commonly read/write pixels (rgb values) but can process different data types.
+* Shaders are notoriously hard to learn and difficult to debug.
+* Writing shaders in the Book of Shaders Editor 
+* Writing shaders in c-like language called GLSL (OpenGL Shading Language)
+
 # Artists Working with Shaders
 * Natalia Stuyk https://www.instagram.com/nataliastuyk/
 * Kynd https://www.instagram.com/kyndinfo/
