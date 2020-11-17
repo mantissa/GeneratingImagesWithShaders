@@ -24,6 +24,7 @@ void main() {
     vec4 color = vec4(1., 0., 0., 1.);
     
     // set individual rgb components
+    // hover over float to access slider
     //color.r = 0.0;
     //color.g = 1.0;
     //color.b = 0.5;
