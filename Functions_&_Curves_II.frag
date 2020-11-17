@@ -10,6 +10,9 @@ uniform vec2 u_resolution;
 uniform vec2 u_mouse;
 uniform float u_time;
 
+// Function from Iñigo Quiles
+// https://www.iquilezles.org/www/articles/functions/functions.htm
+
 float cubicPulse( float c, float w, float x )
 {
     x = abs(x - c);
