@@ -40,7 +40,7 @@ All of these shaders will run in the [Book of Shaders Editor](http://editor.theb
 * [Synthesis I: Additive Synth](Additive_Synth.frag)
 * [Synthesis II: FM Synthesis](FM_Synth.frag)
 * Shaping: [Square](Shaping_I_(Square).frag) & [Circle](Shaping_II_(Circle).frag)
-* Exercise II: experiment with creating different foreground & background colors for your shapes. Hint: use mix().
+* Exercise IV: experiment with creating different foreground & background colors for your shapes. Hint: use mix().
 
 # Day II: Thursday
 * Review and/or questions
