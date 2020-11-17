@@ -40,14 +40,14 @@ All of these shaders will run in the [Book of Shaders Editor](http://editor.theb
 * [Synthesis I: Additive Synth](Additive_Synth.frag)
 * [Synthesis II: FM Synthesis](FM_Synth.frag)
 * Shaping: [Square](Shaping_I_(Square).frag) & [Circle](Shaping_II_(Circle).frag)
-* Exercise IV: experiment with creating different foreground & background colors for your shapes. Hint: use mix().
+* Exercise II: experiment with creating different foreground & background colors for your shapes. Hint: use mix().
 
 # Day II: Thursday
 * Review and/or questions
 * Exercise III: use shaping functions to modulate the canvas (st) and manipulate your circle or square.
 * [Grids I](Grids_I.frag) & [Grids II (HSB)](Grids_II_(HSB).frag) 
 * [Animation](Animation.frag)
-* Exercise II: Try animating the color of the shapes (i.e. lerp between or mix 2 colors)
+* Exercise IV: Try animating the color of the shapes (i.e. lerp between or mix 2 colors)
 * [Random Square I (RGB)](Random_Square_I_(RGB).frag)
 * [Random Square II (Animated)](Random_Square_II.frag)
 * [Random Colors](Random_Colors.frag)
