@@ -27,6 +27,10 @@ void main() {
     // use our x coordinate to 'mix' between the two colors
     // arguments: vec3, vec3, float
     vec3 color = mix( colorA, colorB, st.x);
+    
+    // change the 'space' where the gradient changes
+    //color = mix( colorA, colorB, step( 0.5, st.x));
+    //color = mix( colorA, colorB, smoothstep( 0.184, 1., st.x));
 
     gl_FragColor = vec4(color,1.0);
 }
