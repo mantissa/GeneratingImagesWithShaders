@@ -51,7 +51,7 @@ void main() {
     	hsb.r = d;
     
     	// animate hue over time
-    	//hsv.r = sin(u_time*PI*0.2+d);
+    	//hsb.r = sin(u_time*PI*0.2+d);
     }
     
     // use custom function to translate hsv to rgb color space
