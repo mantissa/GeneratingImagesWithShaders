@@ -42,12 +42,11 @@ float snoise(vec2 v){
 }
 
 float snoiseu( vec2 xy){
-    
     return snoise( xy ) * 0.5 + 0.5;
 }
 
 float plot( vec2 xy, float amt){
-    if( amt > xy.y - 0.006 && amt < xy.y + 0.006) return 1.0;
+    if( amt > xy.y - 0.02 && amt < xy.y + 0.02) return 1.0;
     return 0.;
 }
 
@@ -62,6 +61,8 @@ void main() {
     // red with 1D noise (unsigned)
     float freq = 1.0;
     color.r = snoiseu( vec2(st.x * freq, 0.) );
+    //color.r = snoiseu( vec2(st.x * freq, st.y * freq) );
+    //color.r = snoiseu( vec2(st.x * freq, st.y * freq + u_time*0.3) );
     
     // plot the noise
     color = mix( color, vec3(0., 1.0, 0.0), plot( st, color.r ));
