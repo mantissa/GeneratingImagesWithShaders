@@ -10,15 +10,6 @@ uniform vec2 u_resolution;
 uniform vec2 u_mouse;
 uniform float u_time;
 
-#define PI 3.1415926535
-#define TWO_PI 6.283185307
-
-float random (vec2 st) {
-    return fract(sin(dot(st.xy,
-                         vec2(12.9898,78.233)))*
-        43758.5453123);
-}
-
 float map( float val, float inMin, float inMax, float outMin, float outMax){
     float pct = (val-inMin)/(inMax-inMin);
     pct = clamp( pct, 0.0, 1.0);
@@ -55,12 +46,13 @@ void main() {
     //lerp = pow( fract(u_time*0.2), 3.); // accellerating
     //lerp = pow( fract(u_time*0.2), 0.7); // decellerating
     //lerp = smoothstep(0.1, 0.9, fract(u_time*0.2)); // accellerate & decellerate
+    
     vec2 pos = mix( pos1, pos2, lerp);
     
-    // draw rectangle @ dynamic position
-    float rr = rect(st, pos, 0.3);
+    // calculate square @ dynamic position
+    float rr = rect(st, pos, 0.4);
     
-    // modest blue triangle
+    // modest blue square
     vec3 color = vec3(0, 0, rr);
 
     gl_FragColor = vec4(color,1.0);
