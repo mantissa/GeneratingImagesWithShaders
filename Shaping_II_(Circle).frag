@@ -21,36 +21,37 @@ void main() {
     // set a fill color with rgb
     vec3 color = vec3(0.);
 
-    // visualize the distance from the center
-    float dist = distance( st, vec2(0.50,0.50));
+    // get the distance from the center (this is your virtual compass)
+    // can also use length() or sqrt()
+    float dist = distance( st, vec2(0.50));
 
     // modulate the distance I
-    if( false ){
-        vec2 dd = st - vec2(0.5);
-    	float angle = atan( dd.y / dd.x); // calculate the angle (in radians!)
-        dist += cos( angle * 16. + u_time*PI)*0.04;
+    if( false){
+        vec2 dd = st - vec2(0.5); // calculate xy distance
+    	float angle = atan( dd.y / dd.x); // calculate the angle (in radians!) [-PI, PI]
+        dist += cos( angle * 12. + u_time*PI)*0.030; // change freq & amp
     }
    
     // modulate the distance II
     if( false ){
-    	
     	vec2 dd = st - vec2(0.5);
     	float angle = atan( dd.y / dd.x); // calculate the angle (in radians)
     	dist += cos( angle * 16. + u_time*PI) * (sin( angle * 24. + u_time*PI*2.) * 0.5 + 0.5) * 0.08;
 	}
     
-    // modulate the distance III
+    // modulate the distance III (~FM syth)
     if( false ){
     	dist += cos( cos( 0.2 * u_time * PI * 3.5 + st.x * 40. ) * PI * 0.2 + u_time * PI * 0.5 + st.x * 8. ) * .3;
     	dist *= sin( u_time * 1. * PI + st.y * 6. ) * 2.5;
     }
     
     // threshold the distance to create a circle
+    float size = 0.2;
     // https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/step.xhtml
-    color.rgb = vec3(1.0-step( 0.40, dist));
+    color.rgb = vec3(1.0-step( size, dist));
     
     // w/soft edge
-    // color.rgb = vec3(1.0-smoothstep( 0.3, 0.4, dist));
+    color.rgb = vec3(1.0-smoothstep( 0.3, 0.4, dist));
     
     gl_FragColor = vec4(color, 1.0);
 }
