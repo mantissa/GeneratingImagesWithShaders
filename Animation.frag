@@ -35,8 +35,9 @@ void main() {
     st.x *= u_resolution.x/u_resolution.y;
 
     // start & end positions 
-    vec2 pos1 = vec2(0.0, 0.5);
-    vec2 pos2 = vec2(1.0, 0.5);
+    // on the left & right
+    vec2 startPos = vec2(0.0, 0.5);
+    vec2 endPos = vec2(1.0, 0.5);
     
     // interpolate between positions using mix
     // @ 0., result is pos1
@@ -47,7 +48,7 @@ void main() {
     //lerp = pow( fract(u_time*0.2), 0.7); // decellerating
     //lerp = smoothstep(0.1, 0.9, fract(u_time*0.2)); // accellerate & decellerate
     
-    vec2 pos = mix( pos1, pos2, lerp);
+    vec2 pos = mix( startPos, endPos, lerp);
     
     // calculate square @ dynamic position
     float rr = rect(st, pos, 0.4);
