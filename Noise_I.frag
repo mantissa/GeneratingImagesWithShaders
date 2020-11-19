@@ -64,8 +64,12 @@ void main() {
     //color.r = snoiseu( vec2(st.x * freq, st.y * freq) );
     //color.r = snoiseu( vec2(st.x * freq, st.y * freq + u_time*0.3) );
     
+    // try creating an animated gradient by using simplex noise for green & blue
+    
     // plot the noise
     color = mix( color, vec3(0., 1.0, 0.0), plot( st, color.r ));
+    
+    
     
     gl_FragColor = vec4(color,1.0);
 }
