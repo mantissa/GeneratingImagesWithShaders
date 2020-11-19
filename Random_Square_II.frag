@@ -16,7 +16,7 @@ float random (vec2 st) {
         43758.5453123);
 }
 
-float rect( vec2 xy, float size ){
+float square( vec2 xy, float size ){
     
     float r = step( (1.0-size), xy.x ) * step( (1.0-size), 1.-xy.x );
     r *= step( (1.0-size), xy.y ) * step( (1.0-size), 1.-xy.y );
@@ -45,12 +45,12 @@ void main() {
     fgcolor.b = random(vec2(randt+18., 2.));
     
     // interpolate from one random size to the next
-    float sz = random(vec2(randt+18., 3.))*0.4+0.6;
-    float sz2 = random(vec2((randt+1.)+18., 3.))*0.4+0.6;
-    float szLerp = mix( sz, sz2, smoothstep(0.1, 0.9, fract(u_time)));
+    float sz1 = random(vec2(randt+18., 3.))*0.4+0.6;
+    float sz2 = random(vec2(randt+19., 3.))*0.4+0.6;
+    float szLerp = mix( sz1, sz2, smoothstep(0.1, 0.9, fract(u_time)));
     
-    // mix foreground and backgroudn based on rectangle shape
-    vec3 color = mix( bgcolor, fgcolor, rect(st, szLerp));
+    // mix foreground and background based on square shape
+    vec3 color = mix( bgcolor, fgcolor, square(st, szLerp));
 
     gl_FragColor = vec4(color,1.0);
 }
