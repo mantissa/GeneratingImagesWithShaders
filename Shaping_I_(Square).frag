@@ -19,10 +19,11 @@ void main() {
     // setup an rgb fill color 
     vec3 color = vec3(0.);
 
-    // show x pixels that are greater than 0.2
+    // square fills 60% of canvas (20% border on each side)
+    // use step to show pixels that are greater than 0.2
     color.r = step(0.2, st.x);
     
-    // show x pixels that are less than 0.8
+    // use step to show pixels that are less than 0.8
     //color.g = 1.0-step(0.8, st.x);
     //color.r *= 1.0-step(0.8, st.x);
 
