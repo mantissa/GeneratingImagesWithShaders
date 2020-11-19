@@ -54,7 +54,6 @@ All of these shaders will run in the [Book of Shaders Editor](http://editor.theb
 # Day II: Thursday
 * Review and/or questions
 * Exercise III: use shaping functions to modulate the canvas (st) and manipulate your circle or square.
-* [Grids I](Grids_I.frag) & [Grids II (HSB)](Grids_II_(HSB).frag) 
 * [Animation](Animation.frag)
 * Exercise IV: Try animating the color of the shapes (i.e. lerp between or mix 2 colors)
 * [Random Square I (RGB)](Random_Square_I_(RGB).frag)
@@ -62,6 +61,7 @@ All of these shaders will run in the [Book of Shaders Editor](http://editor.theb
 * [Random Colors](Random_Colors.frag)
 * [Noise I (RGB)](Noise_I.frag)
 * [Noise II (Modulated Circle)](Noise_II.frag)
+* [Grids I](Grids_I.frag) & [Grids II (HSB)](Grids_II_(HSB).frag) 
 
 # Advanced Examples
 * [Noise I](Noise_I_(Live_Code).frag)
