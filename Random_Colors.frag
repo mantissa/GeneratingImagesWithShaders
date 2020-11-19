@@ -36,24 +36,31 @@ void main() {
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
     st.x *= u_resolution.x/u_resolution.y;
     
+    // animate over time
     //st.y -= 0.07*u_time;
     
-    // multiply grid x 10 & then round up
+    // multiply grid x 8 & then round up
     // 1.2 => 2.0
     // 8.9 => 9.0
     vec2 grid = st * vec2(8.); 
     grid = floor( grid );
 
+    // random # based on the cell id
     float cellR = random( grid )*1.;
+    
+    // random speed based on cell index
     float cellSpeed = random( grid + vec2(200.) )*3.;
     
-    float cellRand = random( grid*1. + vec2(0, floor(u_time*cellSpeed+cellR)) );
-    float cellRand2 = random( grid*1. + vec2(0., floor(u_time*cellSpeed+1.+cellR)) );
+    // random number & next random number
+    float cellRand = random( grid + vec2(0, floor(u_time*cellSpeed+cellR)) );
+    float cellRand2 = random( grid + vec2(0., floor(u_time*cellSpeed+1.+cellR)) );
     
+    // random color & next random color
     vec3 color = randomColor( cellRand );
     vec3 color2 = randomColor( cellRand2 );
     
-    color = mix( color, color2, fract(u_time*cellSpeed+cellR));
+    // mix the current & next random color
+    color = mix( color, color2, smoothstep(0.2, 0.6, fract(u_time*cellSpeed+cellR)));
 
     gl_FragColor = vec4(color,1.0);
 }
