@@ -56,22 +56,22 @@ void main() {
     //st.x += snoise( st * 2. )*0.1;
     //st.y += snoise( st * 2. + vec2(100.))*0.1;
 
-    // set a fill color with rgb
+    // create a fill color (rgb)
     vec3 color = vec3(0.);
 
     // visualize the distance from the center
     float dist = distance( st, vec2(0.5));
     color.r = 1.0-dist;
     
-    // add randomness to dist 
+    // add randomness to min dist (before we threshold)
     // play with frequency & amplitude 
-    float freq = 1.;
+    float freq = 2.;
     float amplitude = 0.1;
     dist += snoise( st * freq + vec2(200.))*amplitude;
     
     // now with slow movement
     float speed = 0.2;
-    dist += snoise( st * freq + vec2(200., u_time*speed))*amplitude;
+    //dist += snoise( st * freq + vec2(200., u_time*speed))*amplitude;
     
     // using step(), threshold the distance to create a circle
     color.rgb = vec3(1.0-step( 0.4, dist));
