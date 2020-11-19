@@ -24,6 +24,7 @@ void main() {
     color.r = step(0.2, st.x);
     
     // use step to show pixels that are less than 0.8
+    // note 1.0-vale to invert results
     //color.g = 1.0-step(0.8, st.x);
     //color.r *= 1.0-step(0.8, st.x);
 
