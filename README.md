@@ -79,8 +79,9 @@ All of these shaders will run in the [Book of Shaders Editor](http://editor.theb
 * [GLSL Easing Functions (tweens)](https://github.com/glslify/glsl-easings)
 * [Shaders in Processing, Three.js, openFrameworks](https://thebookofshaders.com/04/)
 
-# Other Programming Tools/Environments
+# Some Other Programming Tools/Environments
 * [The Force](https://shawnlawson.github.io/The_Force/)
+* [GlslViewer](https://github.com/patriciogonzalezvivo/glslViewer)
 * [kodelife](https://hexler.net/products/kodelife) ($)
 * [GLSL Sandbox](http://glslsandbox.com/)
 * [ShaderToy](https://www.shadertoy.com/)
